@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Daten -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's - Offizielle Webseite</title>
+    <link rel="icon" href="bilder/McDonald's_Golden_Arches.svg.png" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="bilder/McDonald's_logo.svg.png" alt="McDonald's Logo">
+                </a>
+            </div>
+            <div class="burger-menu" id="burger-menu" aria-label="Menü umschalten" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Startseite</a></li>
+                <li class="dropdown">
+                    <a href="#produkte"><i class="fas fa-hamburger"></i> Produkte <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#burger">Burger</a></li>
+                        <li><a href="#getraenke">Getränke</a></li>
+                        <li><a href="#desserts">Desserts</a></li>
+                        <li><a href="#snacks">Snacks</a></li>
+                        <li><a href="#fruehstueck">Frühstück</a></li>
+                    </ul>
+                </li>
+                <li><a href="#aktionen"><i class="fas fa-percent"></i> Aktionen</a></li>
+                <li><a href="#standorte"><i class="fas fa-map-marker-alt"></i> Standorte</a></li>
+                <li><a href="#kontakt"><i class="fas fa-phone"></i> Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section mit 3D-Animation -->
+<section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Willkommen bei McDonald's</h1>
+        <p>Entdecke unsere köstlichen Menüs und Angebote!</p>
+        <button class="cta-button" onclick="window.location.href='#produkte'">Jetzt entdecken</button>
+    </div>
+    <div id="burger-animation"></div>
+</section>
+
+<!-- Produktsektion -->
+<section id="produkte" class="products-section">
+    <h2>Unsere Produkte</h2>
+    <!-- Kategorie: Burger -->
+    <div class="product-category" id="burger">
+        <h3>Burger</h3>
+        <div class="product-grid">
+            <!-- Produktkarte -->
+            <div class="product-card">
+                <img src="bilder/1500x1500-web-pop-neu-big-mac-768x768.png" alt="Big Mac">
+                <h4>Big Mac®</h4>
+                <p>Der klassische Big Mac® mit zwei Rindfleisch-Patties, frischem Salat, Käse und unserer speziellen Sauce.</p>
+                <span class="price">4,99 €</span>
+                <button class="add-to-cart">Mehr erfahren</button>
+            </div>
+            <!-- Weitere Produktkarten -->
+            <!-- Füge hier weitere Produkte hinzu -->
+        </div>
+    </div>
+    <!-- Kategorie: Getränke -->
+    <div class="product-category" id="getraenke">
+        <h3>Getränke</h3>
+        <div class="product-grid">
+            <!-- Produktkarten für Getränke -->
+            <!-- Füge hier weitere Produkte hinzu -->
+        </div>
+    </div>
+    <!-- Kategorie: Desserts -->
+    <div class="product-category" id="desserts">
+        <h3>Desserts</h3>
+        <div class="product-grid">
+            <!-- Produktkarten für Desserts -->
+            <!-- Füge hier weitere Produkte hinzu -->
+        </div>
+    </div>
+    <!-- Weitere Kategorien -->
+</section>
+
+<!-- Aktionen Sektion -->
+<section id="aktionen" class="promo-section">
+    <h2>Aktuelle Aktionen</h2>
+    <div class="promo-grid">
+        <!-- Aktionskarte -->
+        <div class="promo-card">
+            <img src="bilder/aktion1.jpg" alt="Aktion 1">
+            <h4>2 für 1 Angebot</h4>
+            <p>Genieße zwei Big Macs® zum Preis von einem. Nur für kurze Zeit!</p>
+            <button class="promo-button">Jetzt sichern</button>
+        </div>
+        <!-- Weitere Aktionskarten -->
+        <!-- Füge hier weitere Aktionen hinzu -->
+    </div>
+</section>
+
+<!-- Standorte Sektion -->
+<section id="standorte" class="locations-section">
+    <h2>Finde ein Restaurant in deiner Nähe</h2>
+    <div class="map-container">
+        <!-- Einbettung einer interaktiven Karte (z.B. Google Maps) -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170683.32854200705!2d11.818285583533868!3d48.05374705914234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dfd377627021b%3A0x247505d3a836c54b!2sMcDonald&#39;s!5e0!3m2!1sde!2sde!4v1727992393803!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Kontakt Sektion -->
+<section id="kontakt" class="contact-section">
+    <h2>Kontaktiere uns</h2>
+    <div class="contact-container">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Ihr Name" required>
+            <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Über McDonald's</h3>
+            <p>Erfahre mehr über unsere Geschichte, Vision und Engagement für Qualität.</p>
+            <div class="socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Nützliche Links</h3>
+            <ul>
+                <li><a href="#datenschutz">Datenschutz</a></li>
+                <li><a href="#agb">AGB</a></li>
+                <li><a href="#impressum">Impressum</a></li>
+                <li><a href="#karriere">Karriere</a></li>
+                <li><a href="#presse">Presse</a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Abonniere unseren Newsletter und verpasse keine Neuigkeiten oder Angebote mehr.</p>
+            <form action="#">
+                <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+                <button type="submit">Abonnieren</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 McDonald's. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- Skripte -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
